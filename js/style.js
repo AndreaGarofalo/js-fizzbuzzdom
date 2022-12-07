@@ -11,3 +11,20 @@ console.log("JS OK");
 // 4- inserisco un if innestato per i multipli di 5
 // 5- inserisco un if innestato per i multipli di 15
 // 6- stampo il risultato
+
+// 1- prendo gli elementi dal dom
+const table = document.getElementById("table");
+console.log(table);
+
+// 2- creo un loop for da 1 a 100
+for (i = 1; i <= 100; i++) {
+  let number = i;
+  if (number % 3 === 0) {
+} else if (number % 15 === 0) {
+  number = "FizzBuzz";
+}
+    number = "Fizz";
+  } else if (number % 5 === 0) {
+    number = "Buzz";
+  console.log(number);
+}
