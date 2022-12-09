@@ -19,12 +19,16 @@ console.log(table);
 // 2- creo un loop for da 1 a 100
 for (i = 1; i <= 100; i++) {
   let number = i;
-  if (number % 3 === 0) {
-} else if (number % 15 === 0) {
-  number = "FizzBuzz";
-}
+  // 5- inserisco un if innestato per i multipli di 15
+  if (number % 15 === 0) {
+    number = "FizzBuzz";
+    // 3- inserisco un if innestato per i multipli di 3
+  } else if (number % 3 === 0) {
     number = "Fizz";
+    // 4- inserisco un if innestato per i multipli di 5
   } else if (number % 5 === 0) {
     number = "Buzz";
+  }
   console.log(number);
+  table.innerHTML += `<div><b>${number}</b></div>`;
 }
